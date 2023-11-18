@@ -17,14 +17,14 @@
                        <td style="width: 900px; text-align: center;">Текст</td>
                    </tr>
 
-            {% for i in news %}
+                {% for i in news %}
                     <tr>
                         <td style="text-align: center">{{ i.id}}</td>
                         <td style="text-align: center">{{ i.name_st|change_querry}}</td>
                         <td style="text-align: center">{{ i.data_cr_st}}</td>
                         <td style="text-align: center">{{ i.text_st|change_querry|truncatechars:20}}</td>
                     </tr>
-                {% endfor %}
+                {% endfor i in news %}
             </tbody>
         </table>
 
