@@ -3,7 +3,7 @@
 
 
 
-{% block title %}Station{% endblock %}
+{% block title %}Station{% endblock title %}
 
 {% block body %}
 <h1 style="text-align: center;">Все статьи</h1><h3 style="text-align: center;">{{ time_now|date:"d M Y"}}</h3>
@@ -30,4 +30,4 @@
         </table>
 
 
-{% endblock %}
+{% endblock body %}
