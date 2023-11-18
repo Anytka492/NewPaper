@@ -20,6 +20,6 @@ from .views import Article, ArticleId
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('news/', Article.as_view()),
-    path('news/<int:id>', ArticleId.as_view()),
+    path('news/', include('django.contrib.flatpages.urls')),
+    path('news/<int:id>', include('news.urls')),
 ]
