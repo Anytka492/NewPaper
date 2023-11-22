@@ -6,7 +6,7 @@ from django.views.generic import ListView, DetailView
 
 class Article(ListView):
     model = Post
-    ordering = '-data_cr_st'
+    ordering = '-dateCreator'
     template_name = 'main.html'
     context_object_name = 'news'
 
