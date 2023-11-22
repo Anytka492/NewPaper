@@ -1,9 +1,9 @@
-{% extends 'default.html' %}
+{% extends 'flatpages/default.html' %}
 {% load custom_filters %}
 
 
 
-{% block title %}Station{% endblock title %}
+{% block title %}{{title}}{% endblock title %}
 
 {% block content %}
 <h1 style="text-align: center;">Все статьи</h1><h3 style="text-align: center;">{{ time_now|date:"d M Y"}}</h3>
@@ -20,9 +20,9 @@
                 {% for i in news %}
                     <tr>
                         <td style="text-align: center">{{ i.id}}</td>
-                        <td style="text-align: center">{{ i.name_st|change_querry}}</td>
-                        <td style="text-align: center">{{ i.data_cr_st}}</td>
-                        <td style="text-align: center">{{ i.text_st|change_querry|truncatechars:20}}</td>
+                        <td style="text-align: center">{{ i.title}}</td>
+                        <td style="text-align: center">{{ i.dateCreation}}</td>
+                        <td style="text-align: center">{{ i.text|truncatechars:20}}</td>
                     </tr>
                 {% endfor %}
             </tbody>
