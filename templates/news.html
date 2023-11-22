@@ -1,4 +1,4 @@
-{% extends 'default.html' %}
+{% extends 'flatpages/default.html' %}
 {% load custom_filters %}
 
 
@@ -6,15 +6,16 @@
 {% block title %}Station{% endblock title %}
 
 {% block content %}
-<h1 style="text-align: center;">Все статьи</h1><h3 style="text-align: center;">{{ time_now|date:"d M Y"}}</h3>
+<h1 style="text-align: center;">Вcе статьи</h1><h3 style="text-align: center;">{{ time_now|date:"d M Y"}}</h3>
 <p>&nbsp</p>
         <table>
             <tbody>
                    <tr>
                        <td style="width: 100px; text-align: center;">Id Статьи</td>
                        <td style="width: 250px; text-align: center;">Заголовок</td>
-                       <td style="width: 250px; text-align: center;">Дата написания</td>
+                       <td style="width: 250px; text-align: center;">Рейтинг</td>
                        <td style="width: 900px; text-align: center;">Текст</td>
+                        <td style="width: 250px; text-align: center;">Дата написания</td>
                    </tr>
 
 
