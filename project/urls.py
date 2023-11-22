@@ -20,6 +20,6 @@ from .views import Article, ArticleId
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('news.urls')),
+    path('news/', include('news.urls')),
     path('news/<int:id>', include('news.urls')),
 ]
