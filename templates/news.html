@@ -6,7 +6,7 @@
 {% block title %}Station{% endblock title %}
 
 {% block content %}
-<h1 style="text-align: center;">{{title}}</h1><h3 style="text-align: center;">{{ time_now|date:"d M Y"}}</h3>
+<h1 style="text-align: center;">{{ title }}</h1><h3 style="text-align: center;">{{ time_now|date:"d M Y"}}</h3>
 <p>&nbsp</p>
         <table>
             <tbody>
@@ -22,10 +22,10 @@
                     <tr>
                         <td style="text-align: center">{{ article.id}}</td>
                         <p>____________________________________________</p>
-                        <td style="text-align: center">{{ article.title|change_querry}}</td>
-                        <td style="text-align: center">{{ article.text}}</td>
-                        <td style="text-align: center">{{ article.rating}}</td>
-                        <td style="text-align: center">{{ article.dateCreation}}</td>
+                        <td style="text-align: center">{{ article.title }}</td>
+                        <td style="text-align: center">{{ article.text }}</td>
+                        <td style="text-align: center">{{ article.rating }}</td>
+                        <td style="text-align: center">{{ article.dateCreation }}</td>
                         
                     </tr>
 
